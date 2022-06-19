@@ -1,5 +1,4 @@
 .site-footer{
-  padding: 240px 0 239px;
   background-image: url("../images/footer-bgi.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -10,10 +9,11 @@
   width: 100%;
   max-width: 450px;
   margin-left: auto;
+  padding: 240px 0 239px;
 }
 
 .footer__title{
-  margin: 0;
+  display: block;
   margin-bottom: 30px;
   font-family: 'Roboto';
   font-style: normal;
@@ -53,9 +53,12 @@
 @media only screen and (max-width: 520px) {
 
   .footer{
-    padding: 96px 0 106px;
     background-image: url("../images/footer-tel-bgi.jpg");
     background-size: 100%;
+  }
+
+  .footer__box{
+    padding: 96px 0 106px;
   }
 
   .footer__title{

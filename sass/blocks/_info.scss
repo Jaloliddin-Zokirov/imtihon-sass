@@ -1,25 +1,28 @@
-.info{
+.info {
   margin-bottom: 70px;
   padding: 70px 0 0;
 }
 
-.carousel-inner{
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+.card-mobile {
+  display: none;
 }
 
-.info-inners{
+.info-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-inners {
   width: 100%;
   max-width: 280px;
   margin-right: 80px;
 
-  &:nth-child(3){
+  &:nth-child(3) {
     margin-right: 0;
   }
 }
 
-.info-title{
+.info-title {
   margin: 0;
   margin-bottom: 30px;
   font-family: 'Roboto';
@@ -30,7 +33,7 @@
   color: #222222;
 }
 
-.info-text{
+.info-text {
   margin: 0;
   margin-bottom: 20px;
   font-family: 'Roboto';
@@ -41,23 +44,23 @@
   color: #333333;
 }
 
-.info-box{
+.info-box {
   @include flex-starter;
 }
 
-.info-rectangle{
+.info-rectangle {
   display: inline-block;
   width: 8px;
   height: 8px;
   margin-right: 10px;
   background-color: #DDDDDD;
 
-  &:nth-child(3){
+  &:nth-child(3) {
     margin-right: 0;
   }
 }
 
-.info-line{
+.info-line {
   display: inline-block;
   width: 40px;
   height: 3px;
@@ -65,7 +68,7 @@
   background-color: #EA625C;
 }
 
-.info-link{
+.info-link {
   display: inline-block;
   font-family: 'Roboto';
   font-style: normal;
@@ -78,10 +81,24 @@
 
 @media only screen and (max-width: 520px) {
 
-  .info-inners{
+  .info-card {
+    display: none;
+  }
+
+  .card-mobile {
+    display: block;
+  }
+
+  .info-inners {
+    width: 310px;
+    margin-right: 0;
     padding: 15px;
     background-color: #F5F5F5;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
     border-radius: 2px;
+  }
+
+  .carousel-item:nth-child(3)>.carousel-box>.card-body>.carousel-inner>.info-inners {
+    padding-bottom: 70px;
   }
 }
