@@ -1,18 +1,17 @@
-.site-footer{
-  padding: 240px 0 239px;
-  background-image: url("../images/footer-bgi.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+.buy{
+  margin-bottom: 70px;
+} 
+
+.buy__inner{
+  @include flex-starter;
 }
 
-.footer__box{
+.buy__box{
   width: 100%;
   max-width: 450px;
-  margin-left: auto;
 }
 
-.footer__title{
+.buy__title{
   margin: 0;
   margin-bottom: 30px;
   font-family: 'Roboto';
@@ -20,10 +19,10 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
-.footer__text{
+.buy__text{
   margin: 0;
   margin-bottom: 30px;
   padding-left: 40px;
@@ -32,13 +31,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
-  border-left: 3px solid #FFFFFF;
-}
+  color: #777777;
+  border-left: 3px solid #888888;
+} 
 
-.footer__link{
+.buy__link{
   display: inline-block;
-  padding: 12px 46px;
+  padding: 12px 90px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -49,24 +48,34 @@
   background-color: #EA625C;
 }
 
+.buy__img-box{
+  margin-left: auto;
+}
 
 @media only screen and (max-width: 520px) {
 
-  .footer{
-    padding: 96px 0 106px;
-    background-image: url("../images/footer-tel-bgi.jpg");
-    background-size: 100%;
+  .buy__inner{
+    flex-direction: column;
   }
 
-  .footer__title{
+  .buy__box{
+    order: 1;
+  }
+
+  .buy__title{
     font-size: 46px;
   }
 
-  .footer__text{
-    font-size: 14px;
+  .buy__text{
+    font-size: 16px;
   }
 
-  .footer__link{
-    padding: 6px 12px;
+  .buy__link{
+    padding: 10px 67px;
+    font-size: 13px;
+  }
+
+  .buy__img-box{
+    margin-bottom: 41px;
   }
 }

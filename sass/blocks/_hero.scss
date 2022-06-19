@@ -1,18 +1,19 @@
-.site-footer{
-  padding: 240px 0 239px;
-  background-image: url("../images/footer-bgi.jpg");
+.hero{
+  margin-bottom: 100px;
+  padding: 91px 0 185px;
+  background-image: url("../images/hero-bgi.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-size: 587px 565px;
+  background-position: calc(50% + 540px) bottom;
+  border-bottom: 2px solid #DDDDDD;
 }
 
-.footer__box{
+.hero__box{
   width: 100%;
-  max-width: 450px;
-  margin-left: auto;
+  max-width: 470px;
 }
 
-.footer__title{
+.hero__title{
   margin: 0;
   margin-bottom: 30px;
   font-family: 'Roboto';
@@ -20,10 +21,10 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: #000000;
 }
 
-.footer__text{
+.hero__text{
   margin: 0;
   margin-bottom: 30px;
   padding-left: 40px;
@@ -32,13 +33,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
-  border-left: 3px solid #FFFFFF;
+  color: #777777;
+  border-left: 3px solid #888888;
 }
 
-.footer__link{
+.hero__link{
   display: inline-block;
-  padding: 12px 46px;
+  padding: 12px 38px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -49,24 +50,24 @@
   background-color: #EA625C;
 }
 
-
 @media only screen and (max-width: 520px) {
 
-  .footer{
-    padding: 96px 0 106px;
-    background-image: url("../images/footer-tel-bgi.jpg");
-    background-size: 100%;
+  .hero{
+    padding: 408px 0 35px;
+    background-size: 392px 378px;
+    background-position: calc(50% + 150px) top;
+    border-bottom: none;
   }
 
-  .footer__title{
+  .hero__title{
     font-size: 46px;
   }
 
-  .footer__text{
+  .hero__text{
     font-size: 14px;
   }
 
-  .footer__link{
-    padding: 6px 12px;
+  .hero__link{
+    font-size: 14px;
   }
 }
